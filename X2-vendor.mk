@@ -125,8 +125,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/X2/proprietary/system_ext/vendor_overlay/29/bin/hw/hostapd:$(TARGET_COPY_OUT_SYSTEM_EXT)/vendor_overlay/29/bin/hw/hostapd \
     vendor/realme/X2/proprietary/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/realme/X2/proprietary/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/realme/X2/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so
-
+    vendor/realme/X2/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so \
+    vendor/realme/X2/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
+    
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
     atfwd \
@@ -134,3 +135,6 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    com.android.hotwordenrollment.common.util
